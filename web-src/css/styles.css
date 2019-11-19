@@ -1,0 +1,55 @@
+body {
+    background-image: url("kanyewallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.display-4.text-center {
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    margin: 4%;
+}
+
+.lead.text-center {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin: 5%;
+}
+
+#carousel-body .slick{
+    margin: 4%;
+}
+
+.slick-prev{
+    left: -4%;
+}
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: navy;
+    font-size: 40px;
+}
+
+.slick-slide {
+    transition: all ease-in-out .25s;
+    opacity: .4;
+    margin: 20px 20px;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
