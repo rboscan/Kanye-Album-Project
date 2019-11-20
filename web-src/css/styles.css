@@ -1,49 +1,83 @@
-body {
-    background-image: url("kanyewallpaper.jpg");
+/* Main website and header text placement */
+.content:before {
+    content:"";
+    position:fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('kanye.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    backdrop-filter: blur(3px);
-    font-size: 80px;
-    margin: 0;
-    padding: 0;
+    background-size:cover;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.content {
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .display-4.text-center {
     font-size: 80px;
     font-weight: 700;
-    color: white;
+    color: maroon;
     margin: 4%;
 }
 
 .lead.text-center {
     font-size: 25px;
     font-weight: 400;
-    color: white;
+    color: maroon;
     margin: 5%;
 }
 
-#carousel-body .slick{
+/* Slick Carousel Styling */
+
+#carousel-body .slick {
+    padding-top: 5%;
     margin: 4%;
 }
 
-.slick-prev{
-    left: -4%;
+.slick-list{
+    z-index:-1;
 }
+
+.slick-prev, .slick-next {
+    padding-top: 5%;
+    z-index: 1;
+}
+
 .slider {
     width: 50%;
     margin: 100px auto;
+    transition: none;
 }
 
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
     color: navy;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .slick-slide {
-    transition: all ease-in-out .25s;
+    transition: ease-in-out .5s;
     opacity: .4;
-    margin: 20px 20px;
+    margin: 0% 1%;
+}
+
+.carousel-img {
+    height: 350px;
+    width: 350px;
 }
 
 .slick-active {
