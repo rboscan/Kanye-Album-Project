@@ -6,7 +6,7 @@ $('#carousel-body .slick').slick({
         {
             breakpoint: 768,
             settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 slidesToShow: 3
             }
@@ -14,7 +14,7 @@ $('#carousel-body .slick').slick({
         {
             breakpoint: 480,
             settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 slidesToShow: 1
             }
