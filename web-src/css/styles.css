@@ -64,13 +64,16 @@
 .slick-next {
     padding-top: -5%;
     z-index: 1;
+    color:#AC734B;
 }
 
 .slick-next:before,
 .slick-prev:before {
-    content: url("images/knob-resized.png");
-    height: 15px;
-    width: 15px;
+    /* content: url("images/knob-resized.png"); */
+    /* height: 15px;
+    width: 15px; */
+    font-size:50px;
+    color: #AC734B;
 }
 
 .slick-track {
@@ -118,19 +121,21 @@ div.keyboard {
     text-align:center;
     height: 100%;
 }
+
 div.keyboard img{
     z-index:0;
     background-color:rgba(54, 60, 58);
-    height: 1250px;
+    height: 90%;
 }
-.keyboard div.outer-container{
+.keyboard div.container{
     text-align: center;
-    color: red;
-    margin-left: 10%;
-    margin-right:10%;
+    color: #AC734B;
+    margin-left: 7%;
+    margin-right: 0;
     z-index: 1;
     top:15%;
     position: absolute;
     overflow-y:auto;
     height:46%;
+    max-width:84.5%;
 }
