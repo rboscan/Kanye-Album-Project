@@ -54,7 +54,7 @@
 }
 
 .slick-next{
-    margin-right: 8%;
+    margin-right: 7%;
 }
 .slick-prev {
     margin-left: 6%;
@@ -80,6 +80,9 @@
     display: flex;
     align-items: center;
     background: rgba(54, 60, 58);
+    border: solid;
+    border-color:black;
+    border-width:10px;
 }
 
 .slick-slide {
@@ -124,29 +127,41 @@ div.keyboard {
 
 div.keyboard img{
     z-index:0;
-    background-color:rgba(54, 60, 58);
+    background-color:rgb(24, 26, 24);
     height: 90%;
 }
+
 .keyboard div.container{
     text-align: center;
     color: #AC734B;
-    margin-left: 7%;
+    margin-left: 7.5%;
     margin-right: 0;
     z-index: 1;
-    top:15%;
+    top:14.5%;
     position: absolute;
     overflow-y:auto;
-    height:46%;
+    height:46.5%;
     max-width:84.5%;
+    border: solid;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 10px;
+    padding-top:4px;
+}
+.keyboard p{
+    font-size: 1.5rem;
 }
 table#song-info thead tr th.table-head{
     color: #AC734B;
     font-size:14px;
+    background-color: rgba(0, 0, 0, 0.438)
 }
 tbody{
     color:#AC734B;
     font-size:12px;
+    background-color: rgba(0, 0, 0, 0.438);
 }
+
 /* Footer */
 .footer {
     position: relative;
