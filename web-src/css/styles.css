@@ -139,7 +139,15 @@ div.keyboard img{
     height:46%;
     max-width:84.5%;
 }
-
+table#song-info thead tr th.table-head{
+    color: #AC734B;
+    font-size:14px;
+}
+tbody{
+    color:#AC734B;
+    font-size:12px;
+}
+/* Footer */
 .footer {
     position: relative;
     width: 100%;
