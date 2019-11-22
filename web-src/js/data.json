@@ -74,4 +74,58 @@
 {"Album": "My Beautiful Dark Twisted Fantasy", "Song": "All Of The Lights", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
 {"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Monster", "Sentiment_Score": "0", "Rating": "Neutral"}
 {"Album": "My Beautiful Dark Twisted Fantasy", "Song": "So Appalled", "Sentiment_Score": "-0.100000001", "Rating": "Negative"}
-{"Album"
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Devil In A New Dress", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Runaway", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Hell Of A Life", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Blame Game", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Lost In The World", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "Who Will Survive In America", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "My Beautiful Dark Twisted Fantasy", "Song": "See Me Now", "Sentiment_Score": "0.200000003", "Rating": "Positive"}
+{"Album": "Yeezus", "Song": "On Sight", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "Black Skinhead", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "I Am A God", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "New Slaves", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "Hold My Liquor", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "I'm In It", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "Blood On The Leaves", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "Guilt Trip", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
+{"Album": "Yeezus", "Song": "Send It Up", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Yeezus", "Song": "Bound 2", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Ultralight Beam", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Father Stretch My Hands Pt. 1", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Father Stretch My Hands Pt. 2", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Famous", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Feedback", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Low Lights", "Sentiment_Score": "0.200000003", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Highlights", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Freestyle 4", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "I Love Kanye", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Waves", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "FML", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Real Friends", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Wolves", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Frank's Track", "Sentiment_Score": "0.200000003", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Siiiiiiiiilver Surffffeeeeer Intermission", "Sentiment_Score": "0.400000006", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "30 Hours", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "No More Parties In LA", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Facts (Charlie Heat Version)", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "The Life Of Pablo", "Song": "Fade", "Sentiment_Score": "0.200000003", "Rating": "Positive"}
+{"Album": "The Life Of Pablo", "Song": "Saint Pablo", "Sentiment_Score": "0.100000001", "Rating": "Positive"}
+{"Album": "Ye", "Song": "I Thought About Killing You", "Sentiment_Score": "-0.400000006", "Rating": "Negative"}
+{"Album": "Ye", "Song": "Yikes", "Sentiment_Score": "-0.100000001", "Rating": "Negative"}
+{"Album": "Ye", "Song": "All Mine", "Sentiment_Score": "-0.100000001", "Rating": "Negative"}
+{"Album": "Ye", "Song": "Wouldn't Leave", "Sentiment_Score": "-0.5", "Rating": "Negative"}
+{"Album": "Ye", "Song": "No Mistakes", "Sentiment_Score": "0.300000012", "Rating": "Positive"}
+{"Album": "Ye", "Song": "Ghost Town", "Sentiment_Score": "-0.100000001", "Rating": "Negative"}
+{"Album": "Ye", "Song": "Violent Crimes", "Sentiment_Score": "0", "Rating": "Neutral"}
+{"Album": "Jesus is King", "Song": "Every Hour", "Sentiment_Score": "0.300000012", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "Selah", "Sentiment_Score": "0.5", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "Follow God", "Sentiment_Score": "0.400000006", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "Closed on Sunday", "Sentiment_Score": "-0.200000003", "Rating": "Negative"}
+{"Album": "Jesus is King", "Song": "On God", "Sentiment_Score": "-0.200000003", "Rating": "Negative"}
+{"Album": "Jesus is King", "Song": "Everything We Need", "Sentiment_Score": "0.300000012", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "Water", "Sentiment_Score": "0.300000012", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "God Is", "Sentiment_Score": "0.400000006", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "Hands On", "Sentiment_Score": "-0.400000006", "Rating": "Negative"}
+{"Album": "Jesus is King", "Song": "Use This Gospel", "Sentiment_Score": "0.400000006", "Rating": "Positive"}
+{"Album": "Jesus is King", "Song": "Jesus is Lord", "Sentiment_Score": "0", "Rating": "Neutral"}
