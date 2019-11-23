@@ -9,6 +9,13 @@
 </head>
 
 <body>
-    <p>Dictionary has been processed, look at the data: <a href='/result'>Results</a></p>
+  <p>Dictionary has been processed, look at the data: <a href='/result'>Results</a></p>
+  
+  {% for hit in hits %}
+  <TR>
+    <TD class='c1'>{{hits.album}}</TD>
+  </TR>
+  {% endfor %}
 </body>
+
 </html>

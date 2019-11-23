@@ -7,6 +7,7 @@ from flask import (
 import pandas as pd
 import os
 from flask_sqlalchemy import SQLAlchemy
+from flask_restful import Resource, Api
 
 # Innit app
 app = Flask(__name__)
@@ -25,6 +26,12 @@ class Discography(db.Model):
     sentiment = db.Column(db.Float)
     rating = db.Column(db.String(50))
 
+    def __init__ (self,album,song,sentiment,rating):
+        self.album = album
+        self.song = song
+        self.sentiment = sentiment
+        self.rating = rating
+
     def __repr__(self):
         return '<Discography %r>' % (self.album)
 
@@ -33,11 +40,7 @@ def setup():
     db.drop_all()
     db.create_all()
 
-@app.route("/")
-def index():
-    return render_template('index.html')
-
-@app.route("/process", methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def process():
     if request.method == 'GET':
         
@@ -53,9 +56,9 @@ def process():
             db.session.add(discography)
 
         db.session.commit()
-    return render_template("form.html")
+    return render_template('index.html')
 
-@app.route("/result")
+@app.route('/result')
 def list_hits():
     results = db.session.query(Discography.album, Discography.song, Discography.sentiment, Discography.rating).all()
 
@@ -68,7 +71,7 @@ def list_hits():
             "Rating":result[3]
         })
     return jsonify(hits)
-
+    
 # Run Server
 if __name__ == '__main__':
     app.run(debug=True)
