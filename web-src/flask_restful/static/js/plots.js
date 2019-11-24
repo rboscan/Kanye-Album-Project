@@ -22,32 +22,40 @@ d3.json('/result', function (jsondata) {
         };
     };
     
-    var trace1 = {
+    var pos = {
         x: ['Positive'],
         y: positive.length,
         name: 'Positive',
         type: 'bar'
     };
 
-    var trace2 = {
+    var neg = {
         x: ['Negative'],
         y: negative.length,
         name: 'Negative',
         type: 'bar'
     };
 
-    var trace3 = {
+    var neut = {
         x: ['Neutral'],
         y: neutral.length,
         name: 'Neutral',
         type: 'bar'
     };
 
-    var data = [trace1, trace2, trace3];
+    var data = [pos, neg, neut];
 
-    var layout = { barmode: 'relative' };
+    var layout = { 
+        barmode: 'relative',
+        xaxis:{
+            range:[-3,3],
+        },
+        yaxis:{
+            range:[-3,3],
+        },
+};
 
-    Plotly.restyle('plot', data, layout);
+    Plotly.newPlot('plot', data, layout);
 });
 
 
@@ -73,28 +81,28 @@ $('div').on("afterChange", function () {
                 }
             };
         };
-        var trace1 = {
+        var pos = {
             x: ['Positive'],
             y: positive.length,
             name: 'Positive',
             type: 'bar'
         };
 
-        var trace2 = {
+        var neg = {
             x: ['Negative'],
             y: negative.length,
             name: 'Negative',
             type: 'bar'
         };
 
-        var trace3 = {
+        var neut = {
             x: ['Neutral'],
             y: neutral.length,
             name: 'Neutral',
             type: 'bar'
         };
 
-        var data = [trace1, trace2, trace3];
+        var data = [pos, neg, neut];
 
         var layout = { barmode: 'relative' };
 

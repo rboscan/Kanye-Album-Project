@@ -122,13 +122,13 @@ div.keyboard {
     margin: 5% 5% 2% 5%;
     position: relative;
     text-align:center;
-    height: 100%;
+    height: 50%;
 }
 
 div.keyboard img{
     z-index:0;
     background-color:rgb(24, 26, 24);
-    height: 90%;
+    height: 120%;
 }
 
 .keyboard div.container{
@@ -140,7 +140,7 @@ div.keyboard img{
     top:14.5%;
     position: absolute;
     overflow-y:auto;
-    height:46.5%;
+    height:30%;
     max-width:84.5%;
     border: solid;
     border-width: 10px;
@@ -160,6 +160,12 @@ tbody{
     color:#AC734B;
     font-size:12px;
     background-color: rgba(0, 0, 0, 0.438);
+}
+
+div.col-sm div#plot{
+    height:125%;
+    position: sticky;
+    top:0;
 }
 
 /* Footer */
