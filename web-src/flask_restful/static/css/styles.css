@@ -69,9 +69,6 @@
 
 .slick-next:before,
 .slick-prev:before {
-    /* content: url("images/knob-resized.png"); */
-    /* height: 15px;
-    width: 15px; */
     font-size: 3rem;
     color: #AC734B;
 }
@@ -140,7 +137,7 @@ div.keyboard img{
     top:14.5%;
     position: absolute;
     overflow-y:auto;
-    height:30%;
+    height:57.5%;
     max-width:84.5%;
     border: solid;
     border-width: 10px;
@@ -162,13 +159,8 @@ tbody{
     background-color: rgba(0, 0, 0, 0.438);
 }
 
-div.col-sm div#plot{
-    height:125%;
-    position: sticky;
-    top:0;
-}
-
 /* Footer */
+
 .footer {
     position: relative;
     width: 100%;

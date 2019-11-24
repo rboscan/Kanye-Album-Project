@@ -21,7 +21,7 @@ d3.json('/result', function (jsondata) {
             }
         };
     };
-    
+
     var pos = {
         x: ['Positive'],
         y: positive.length,
@@ -43,17 +43,18 @@ d3.json('/result', function (jsondata) {
         type: 'bar'
     };
 
-    var data = [pos, neg, neut];
+    var data = [neg,neut,pos];
 
-    var layout = { 
-        barmode: 'relative',
-        xaxis:{
-            range:[-3,3],
+    var layout = {
+        barmode: 'stack',
+        autosize: true,
+        xaxis: {
+            range: [-4, 4],
         },
-        yaxis:{
-            range:[-3,3],
+        yaxis: {
+            range: [-4, 4],
         },
-};
+    };
 
     Plotly.newPlot('plot', data, layout);
 });
