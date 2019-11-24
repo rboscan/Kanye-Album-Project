@@ -9,12 +9,10 @@
 </head>
 
 <body>
-  <p>Dictionary has been processed, look at the data: <a href='/result'>Results</a></p>
+  <p>Dictionary has been processed, look at the data:</p>
   
-  {% for hit in hits %}
-  <TR>
-    <TD class='c1'>{{hits.album}}</TD>
-  </TR>
+  {% for n in range(hits|length) %}
+    <li>{{ hits[n]['Album'] }} {{ hits[n]['Song'] }}</li>
   {% endfor %}
 </body>
 
