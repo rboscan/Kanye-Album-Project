@@ -6,13 +6,15 @@ d3.json('/result', function (jsondata) {
     // ACTIVE SLIDE IMAGE
     let inputElement = d3.select("div.slick-slide.slick-current.slick-active.slick-center").select("div").select("div").select("img").attr("id");
     var song_name = [];
+    var album_name = [];
     var positive = [];
     var negative = [];
     var neutral = [];
-
     // PLOT 1 START
     for (var i = 0; i < jsondata.length; i++) {
         if (jsondata[i]['Album'] == inputElement) {
+            var album = jsondata[i]['Album'];
+            album_name.push(album);
             var song_sentiment = jsondata[i]['Sentiment'];
             song_name.push(jsondata[i]['Song']);
             if (song_sentiment > 0) {
@@ -33,7 +35,7 @@ d3.json('/result', function (jsondata) {
         name: 'Positive',
         orientation: 'h',
         marker: {
-            color: 'rgba(47, 204, 16, 0.438)',
+            color: 'rgba(47, 204, 16)',
             width: 1
         },
         type: 'bar'
@@ -45,7 +47,7 @@ d3.json('/result', function (jsondata) {
         name: 'Negative',
         orientation: 'h',
         marker: {
-            color: 'rgba(218, 11, 11, 0.438)',
+            color: 'rgba(218, 11, 11)',
             width: 1
         },
         type: 'bar'
@@ -57,19 +59,32 @@ d3.json('/result', function (jsondata) {
         name: 'Neutral',
         orientation: 'h',
         marker: {
-            color: 'rgba(2, 0, 138, 0.438)',
+            color: 'rgba(2, 0, 138)',
             width: 1
         },
         type: 'bar'
     };
 
-    var data = [pos, neut, neg];
+    var data = [neg, neut, pos];
 
     var layout = {
+        title: {
+            text: "Datum Distribution",
+        },
+        xaxis: {
+            title: {
+                text: "Sentiment Score",
+            },
+        },
+        yaxis: {
+            title: {
+                text: "Sentiment Distribution by Count",
+            },
+        },
         barmode: 'stack'
     };
 
-    Plotly.newPlot('plot1', data, layout);
+    Plotly.newPlot('plot1', data, layout, {responsive: true});
 
     // SLICK SLIDE 2ND PLOT
 
@@ -146,8 +161,11 @@ $('div').on("afterChange", function () {
         var positive = [];
         var negative = [];
         var neutral = [];
+        var album_name = [];
         let inputElement = d3.select("div.slick-slide.slick-current.slick-active.slick-center").select("div").select("div").select("img").attr("id");
         for (var i = 0; i < jsondata.length; i++) {
+            var album = jsondata[i]['Album'];
+            album_name.push(album);
             if (jsondata[i]['Album'] == inputElement) {
                 var song_sentiment = jsondata[i]['Sentiment'];
                 song_name.push(jsondata[i]['Song']);
@@ -169,7 +187,7 @@ $('div').on("afterChange", function () {
             name: 'Positive',
             orientation: 'h',
             marker: {
-                color: 'rgba(47, 204, 16, 0.438)',
+                color: 'rgba(47, 204, 16)',
                 width: 1
             },
             type: 'bar'
@@ -181,7 +199,7 @@ $('div').on("afterChange", function () {
             name: 'Negative',
             orientation: 'h',
             marker: {
-                color: 'rgba(218, 11, 11, 0.438)',
+                color: 'rgba(218, 11, 11)',
                 width: 1
             },
             type: 'bar'
@@ -193,19 +211,32 @@ $('div').on("afterChange", function () {
             name: 'Neutral',
             orientation: 'h',
             marker: {
-                color: 'rgba(2, 0, 138, 0.438)',
+                color: 'rgba(2, 0, 138)',
                 width: 1
             },
             type: 'bar'
         };
 
-        var data = [pos, neut, neg];
+        var data = [neg, neut, pos];
 
         var layout = {
+            title: {
+                text: 'Datum Distribution',
+            },
+            xaxis: {
+                title: {
+                    text: "Sentiment Score",
+                },
+            },
+            yaxis: {
+                title: {
+                    text: "Sentiment Distribution by Count",
+                },
+            },
             barmode: 'stack'
         };
 
-        Plotly.newPlot('plot1', data, layout);
+        Plotly.newPlot('plot1', data, layout, {responsive: true});
 
         // PLOT 2 SLICK SLIDE CHANGE
 
