@@ -30,7 +30,7 @@
 .display-4.text-center {
     font-size: 80px;
     font-weight: 700;
-    color: #AC734B;
+    color: rgba(228, 117, 59);
     background: rgba(54, 60, 58);
     margin: 5% 20% 5% 20%;
 }
@@ -38,7 +38,7 @@
 .lead.text-center {
     font-size: 25px;
     font-weight: 400;
-    color: #AC734B;
+    color: rgba(228, 117, 59);
     background: rgba(54, 60, 58);
     margin: 5%;
 }
@@ -64,13 +64,13 @@
 .slick-next {
     padding-top: -5%;
     z-index: 1;
-    color:#AC734B;
+    color:rgba(228, 117, 59);
 }
 
 .slick-next:before,
 .slick-prev:before {
     font-size: 3rem;
-    color: #AC734B;
+    color: rgba(228, 117, 59);
 }
 
 .slick-track {
@@ -104,7 +104,7 @@
 
 .slick div p {
     text-align: center;
-    color: #AC734B;
+    color: rgba(228, 117, 59);
     background: rgba(0, 0, 0);
 }
 
@@ -130,7 +130,7 @@ div.keyboard img{
 
 .keyboard div.container{
     text-align: center;
-    color: #AC734B;
+    color: rgba(228, 117, 59);
     margin-left: 7.5%;
     margin-right: 0;
     z-index: 1;
@@ -149,12 +149,12 @@ div.keyboard img{
     font-size: 1.5rem;
 }
 table#song-info thead tr th.table-head{
-    color: #AC734B;
+    color: rgba(228, 117, 59);
     font-size:14px;
     background-color: rgba(0, 0, 0, 0.438);
 }
 tbody{
-    color:#AC734B;
+    color:rgba(228, 117, 59);
     font-size:12px;
     background-color: rgba(0, 0, 0, 0.438);
 }
@@ -169,7 +169,7 @@ div#plot2{
     position: relative;
     width: 100%;
     background-color: rgba(54, 60, 58);
-    color: #AC734B;
+    color: rgba(228, 117, 59);
     text-align: center;
     height:50%;
   }
