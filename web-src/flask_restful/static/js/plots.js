@@ -81,7 +81,9 @@ d3.json('/result', function (jsondata) {
                 text: "Sentiment Distribution by Count",
             },
         },
-        barmode: 'stack'
+        barmode: 'stack',
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)'
     };
 
     Plotly.newPlot('plot1', data, layout, { responsive: true });
@@ -117,7 +119,9 @@ d3.json('/result', function (jsondata) {
             var layout2 = {
                 title: {
                     text: 'Datum Distribution',
-                }
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)'
             };
             Plotly.newPlot('plot2', data2, layout2, { responsive: true });
         };
@@ -204,6 +208,8 @@ $('div').on("afterChange", function () {
                     text: "Sentiment Distribution by Count",
                 },
             },
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
             barmode: 'stack'
         };
 
@@ -236,11 +242,13 @@ $('div').on("afterChange", function () {
                     type: 'pie',
                     hole: 0.6
                 }];
-               
+
                 var layout2 = {
                     title: {
                         text: 'Datum Distribution',
-                    }
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)'
                 };
                 Plotly.newPlot('plot2', data2, layout2, { responsive: true });
             };

@@ -27,20 +27,15 @@
     padding:0;
 }
 
-.display-4.text-center {
-    font-size: 80px;
-    font-weight: 700;
+
+img.header {
     color: #AC734B;
-    background: rgba(54, 60, 58);
-    margin: 5% 20% 5% 20%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 20% 0 20%;
 }
 
-.lead.text-center {
-    font-size: 25px;
-    font-weight: 400;
-    color: #AC734B;
-    background: rgba(54, 60, 58);
-    margin: 5%;
+img.subheader {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* Slick Carousel Styling */
