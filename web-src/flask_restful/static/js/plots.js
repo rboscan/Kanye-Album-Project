@@ -84,74 +84,45 @@ d3.json('/result', function (jsondata) {
         barmode: 'stack'
     };
 
-    Plotly.newPlot('plot1', data, layout, {responsive: true});
+    Plotly.newPlot('plot1', data, layout, { responsive: true });
 
     // SLICK SLIDE 2ND PLOT
 
-    // var song_name2 = [];
-    // var positive2 = [];
-    // var negative2 = [];
-    // var neutral2 = [];
-    // for (var i = 0; i < jsondata.length; i++) {
-    //     if (jsondata[i]['Album'] == inputElement) {
-    //         var song_sentiment = jsondata[i]['Sentiment'];
-    //         song_name2.push(jsondata[i]['Song']);
-    //         if (song_sentiment > 0) {
-    //             positive2.push(song_sentiment);
-    //         } else if (song_sentiment === 0) {
-    //             neutral2.push(song_sentiment);
-    //         } else {
-    //             negative2.push(song_sentiment);
-    //         }
-    //     };
-    // };
-    // pos_len2 = positive2.reduce((a,b) => a+b, 0);
-    // console.log(pos_len2);
-    // neg_len2 = negative2.reduce((a,b) => a+b, 0);
-    // neut_len2 = neutral2.reduce((a,b) => a+b, 0);
-    // var pos2 = {
-    //     x: [pos_len2],
-    //     y: ['Bar'],
-    //     name: 'Positive',
-    //     orientation: 'h',
-    //     marker: {
-    //         color: 'rgba(47, 204, 16, 0.438)',
-    //         width: 1
-    //     },
-    //     type: 'bar'
-    // };
+    var song_name2 = [];
+    var positive2 = [];
+    var negative2 = [];
+    var neutral2 = [];
+    for (var i = 0; i < jsondata.length; i++) {
+        if (jsondata[i]['Album'] == inputElement) {
+            var song_sentiment = jsondata[i]['Sentiment'];
+            song_name2.push(jsondata[i]['Song']);
+            if (song_sentiment > 0) {
+                positive2.push(song_sentiment);
+            } else if (song_sentiment === 0) {
+                neutral2.push(song_sentiment);
+            } else {
+                negative2.push(song_sentiment);
+            }
+            pos_len2 = positive2.length;
+            neut_len2 = neutral2.length;
+            neg_len2 = negative2.length;
 
-    // var neg2 = {
-    //     x: [neg_len2],
-    //     y: ['Bar'],
-    //     name: 'Negative',
-    //     orientation: 'h',
-    //     marker: {
-    //         color: 'rgba(218, 11, 11, 0.438)',
-    //         width: 1
-    //     },
-    //     type: 'bar'
-    // };
+            var data2 = [{
+                values: [pos_len2, neut_len2, neg_len2],
+                labels: ['Positive', 'Neutral', 'Negative'],
+                type: 'pie',
+                hole: 0.6
+            }];
 
-    // var neut2 = {
-    //     x: [neut_len2],
-    //     y: ['Bar'],
-    //     name: 'Neutral',
-    //     orientation: 'h',
-    //     marker: {
-    //         color: 'rgba(2, 0, 138, 0.438)',
-    //         width: 1
-    //     },
-    //     type: 'bar'
-    // };
+            var layout2 = {
+                title: {
+                    text: 'Datum Distribution',
+                }
+            };
+            Plotly.newPlot('plot2', data2, layout2, { responsive: true });
+        };
+    };
 
-    // var data2 = [pos2, neut2, neg2];
-
-    // var layout2 = {
-    //     barmode: 'stack'
-    // };
-
-    // Plotly.newPlot('plot2', data2, layout2);
 });
 
 // SLICK SLIDE CHANGE
@@ -236,74 +207,44 @@ $('div').on("afterChange", function () {
             barmode: 'stack'
         };
 
-        Plotly.newPlot('plot1', data, layout, {responsive: true});
+        Plotly.newPlot('plot1', data, layout, { responsive: true });
 
         // PLOT 2 SLICK SLIDE CHANGE
 
-        //     var song_name2 = [];
-        //     var positive2 = [];
-        //     var negative2 = [];
-        //     var neutral2 = [];
-        //     for (var i = 0; i < jsondata.length; i++) {
-        //         if (jsondata[i]['Album'] == inputElement) {
-        //             var song_sentiment2 = jsondata[i]['Sentiment'];
-        //             song_name2.push(jsondata[i]['Song']);
-        //             if (song_sentiment2 > 0) {
-        //                 positive2.push(song_sentiment2);
-        //             } else if (song_sentiment2 === 0) {
-        //                 neutral2.push(song_sentiment2);
-        //             } else {
-        //                 negative2.push(song_sentiment2);
-        //             }
-        //         };
-        //     };
-        //     pos_len2 = positive2.reduce((a,b) => a+b, 0);
-        //     console.log(pos_len2);
-        //     neg_len2 = negative2.reduce((a,b) => a+b, 0);
-        //     neut_len2 = neutral2.reduce((a,b) => a+b, 0);
-        //     var pos2 = {
-        //         x: [pos_len2],
-        //         y: ['Bar'],
-        //         name: 'Positive',
-        //         orientation: 'h',
-        //         marker: {
-        //             color: 'rgba(47, 204, 16, 0.438)',
-        //             width: 1
-        //         },
-        //         type: 'bar'
-        //     };
+        var song_name2 = [];
+        var positive2 = [];
+        var negative2 = [];
+        var neutral2 = [];
+        for (var i = 0; i < jsondata.length; i++) {
+            if (jsondata[i]['Album'] == inputElement) {
+                var song_sentiment2 = jsondata[i]['Sentiment'];
+                song_name2.push(jsondata[i]['Song']);
+                if (song_sentiment2 > 0) {
+                    positive2.push(song_sentiment2);
+                } else if (song_sentiment2 === 0) {
+                    neutral2.push(song_sentiment2);
+                } else {
+                    negative2.push(song_sentiment2);
+                }
+                pos_len2 = positive2.length;
+                neut_len2 = neutral2.length;
+                neg_len2 = negative2.length;
 
-        //     var neg2 = {
-        //         x: [neg_len2],
-        //         y: ['Bar'],
-        //         name: 'Negative',
-        //         orientation: 'h',
-        //         marker: {
-        //             color: 'rgba(218, 11, 11, 0.438)',
-        //             width: 1
-        //         },
-        //         type: 'bar'
-        //     };
+                var data2 = [{
+                    values: [pos_len2, neut_len2, neg_len2],
+                    labels: ['Positive', 'Neutral', 'Negative'],
+                    type: 'pie',
+                    hole: 0.6
+                }];
+               
+                var layout2 = {
+                    title: {
+                        text: 'Datum Distribution',
+                    }
+                };
+                Plotly.newPlot('plot2', data2, layout2, { responsive: true });
+            };
+        };
 
-        //     var neut2 = {
-        //         x: [neut_len2],
-        //         y: ['Bar'],
-        //         name: 'Neutral',
-        //         orientation: 'h',
-        //         marker: {
-        //             color: 'rgba(2, 0, 138, 0.438)',
-        //             width: 1
-        //         },
-        //         type: 'bar'
-        //     };
-
-        //     var data2 = [pos2, neut2, neg2];
-
-        //     var layout2 = {
-        //         barmode: 'stack'
-        //     };
-
-        //     Plotly.newPlot('plot2', data2, layout2);
-        // });
     });
 });

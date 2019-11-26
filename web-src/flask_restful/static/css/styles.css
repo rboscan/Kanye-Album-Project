@@ -159,6 +159,10 @@ tbody{
     background-color: rgba(0, 0, 0, 0.438);
 }
 
+div#plot2{
+    margin-top:20px;
+}
+
 /* Footer */
 
 .footer {
