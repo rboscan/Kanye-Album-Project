@@ -82,9 +82,6 @@ d3.json('/result', function (jsondata) {
             },
         },
         barmode: 'stack'
-
-        paper_bgcolor='rgba(0,0,0,0)',
-        plot_bgcolor='rgba(0,0,0,0)'
     };
 
     Plotly.newPlot('plot1', data, layout, {responsive: true});
@@ -237,9 +234,6 @@ $('div').on("afterChange", function () {
                 },
             },
             barmode: 'stack'
-
-            paper_bgcolor='rgba(0,0,0,0)',
-            plot_bgcolor='rgba(0,0,0,0)'
         };
 
         Plotly.newPlot('plot1', data, layout, {responsive: true});
