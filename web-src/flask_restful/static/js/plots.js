@@ -187,7 +187,7 @@ $('div').on("afterChange", function () {
             name: 'Positive',
             orientation: 'h',
             marker: {
-                color: 'rgba(47, 204, 16)',
+                color: 'rgba(205, 182, 93, 0.9)',
                 width: 1
             },
             type: 'bar'
@@ -199,7 +199,7 @@ $('div').on("afterChange", function () {
             name: 'Negative',
             orientation: 'h',
             marker: {
-                color: 'rgba(218, 11, 11)',
+                color: 'rgba(217, 102, 55, 0.9)',
                 width: 1
             },
             type: 'bar'
@@ -211,7 +211,7 @@ $('div').on("afterChange", function () {
             name: 'Neutral',
             orientation: 'h',
             marker: {
-                color: 'rgba(2, 0, 138)',
+                color: 'rgba(196, 148, 86, 0.9)',
                 width: 1
             },
             type: 'bar'
