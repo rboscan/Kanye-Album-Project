@@ -2,6 +2,7 @@ $('#carousel-body .slick').slick({
     centerMode: true,
     slidesToShow: 3,
     focusOnSelect: true,
+    arrows:true,
     responsive: [
         {
             breakpoint: 768,

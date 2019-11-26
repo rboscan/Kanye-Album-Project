@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <meta charset="UTF-8">
+
     <title>What the Kanye</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </head>
 
@@ -21,11 +23,10 @@
     <div class="content">
         <h1 class="display-4 text-center">Kanye Lyrics Analysis</h1>
         <div class="lead text-center">
-        <p>Click through the carousel below to find out more about how Kanye's albums are
-            rated
-            by
-            google sentiment anaylizng scripts.</p>
-        <a class="btn btn-secondary btn-lg" href="/result" role="button">Dictionary</a>
+            <p>Click through the carousel below to find out more about how Kanye's albums are
+                rated
+                by
+                google sentiment anaylizng scripts.</p>
         </div>
         <!-- Slick Carousel -->
         <section id="carousel-body" class="carousel-bg">
@@ -33,97 +34,75 @@
             <div class="slick" width="400" height="400">
                 <div>
                     <p>College Dropout</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/college-dropout.jpg')}}" alt="Album Cover Art for College Dropout"
-                        id="College Dropout">
+                    <img src="{{ url_for('static', filename='js/album-cover/college-dropout.jpg')}}"
+                        alt="Album Cover Art for College Dropout" id="College Dropout">
                 </div>
                 <div>
                     <p>Late Registration</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/late-registration.jpg')}}" alt="Album Cover Art for Late Registration"
-                        id="Late Registration">
+                    <img src="{{ url_for('static', filename='js/album-cover/late-registration.jpg')}}"
+                        alt="Album Cover Art for Late Registration" id="Late Registration">
                 </div>
                 <div>
                     <p>Graduation</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/Graduation.jpg')}}" alt="Album Cover Art for Graduation" id="Graduation">
+                    <img src="{{ url_for('static', filename='js/album-cover/Graduation.jpg')}}"
+                        alt="Album Cover Art for Graduation" id="Graduation">
                 </div>
                 <div>
                     <p>808s & Heartbreak</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/808s-heartbreak.png')}}" alt="Album Cover Art for 808s & Heartbreak"
-                        id="808s & Heartbreak">
+                    <img src="{{ url_for('static', filename='js/album-cover/808s-heartbreak.png')}}"
+                        alt="Album Cover Art for 808s & Heartbreak" id="808s & Heartbreak">
                 </div>
                 <div>
                     <p>My Beautiful Dark Twisted Fantasy</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/bdtf.jpg')}}" alt="Album Cover Art for My Beautiful Dark Twisted Fantasy"                        id="My Beautiful Dark Twisted Fantasy">
+                    <img src="{{ url_for('static', filename='js/album-cover/bdtf.jpg')}}"
+                        alt="Album Cover Art for My Beautiful Dark Twisted Fantasy"
+                        id="My Beautiful Dark Twisted Fantasy">
                 </div>
                 <div>
                     <p>Yeezus</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/yeezus.png')}}" alt="Album Cover Art for Yeezus" id='Yeezus'>
+                    <img src="{{ url_for('static', filename='js/album-cover/yeezus.png')}}"
+                        alt="Album Cover Art for Yeezus" id='Yeezus'>
                 </div>
                 <div>
                     <p>Life of Pablo</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/life-of-pablo.jpg')}}" alt="Album Cover Art for Life of Pablo"
-                        id="The Life Of Pablo">
+                    <img src="{{ url_for('static', filename='js/album-cover/life-of-pablo.jpg')}}"
+                        alt="Album Cover Art for Life of Pablo" id="The Life Of Pablo">
                 </div>
                 <div>
                     <p>Ye</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/ye-album-cover.jpg')}}" alt="Album Cover Art for Ye" id='Ye'>
+                    <img src="{{ url_for('static', filename='js/album-cover/ye-album-cover.jpg')}}"
+                        alt="Album Cover Art for Ye" id='Ye'>
                 </div>
                 <div>
                     <p>Jesus is King</p>
-                    <img src="{{ url_for('static', filename='js/album-cover/jesus-king.png')}}" alt="Album Cover Art for Jesus is King" id='Jesus is King'>
+                    <img src="{{ url_for('static', filename='js/album-cover/jesus-king.png')}}"
+                        alt="Album Cover Art for Jesus is King" id='Jesus is King'>
                 </div>
         </section>
     </div>
     <div class="keyboard">
-        <img src="{{ url_for('static', filename='css/images/cropped808.png')}}" style="width:100%;">
+        <img src="{{ url_for('static', filename='css/images/test.png')}}" style="width:100%;">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <p>Song Information</p>
+                    <h2>Song Information</h2>
                     <table id="song-info" class="table">
                         <thead>
                             <tr>
                                 <th class="table-head">Album</th>
-                                <th class="table-head">Song</th>
-                                <th class="table-head">Sentiment Score</th>
                                 <th class="table-head">Rating</th>
+                                <th class="table-head">Sentiment Score</th>
+                                <th class="table-head">Song</th>
                             </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody>
+                        </tbody>
                     </table>
                 </div>
                 <div class="col-sm">
-                    <p>Graphs</p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et
-                    dolore magna aliqua. Ornare arcu odio ut sem nulla pharetra diam. Mi in nulla posuere
-                    sollicitudin
-                    aliquam ultrices. Semper auctor neque vitae tempus quam. Feugiat sed lectus vestibulum mattis
-                    ullamcorper velit sed ullamcorper morbi. Lacus luctus accumsan tortor posuere ac ut consequat
-                    semper
-                    viverra. Sagittis aliquam malesuada bibendum arcu. Tempus quam pellentesque nec nam aliquam sem
-                    et
-                    tortor consequat. Nibh tortor id aliquet lectus proin nibh nisl. Netus et malesuada fames ac
-                    turpis
-                    egestas integer eget. Turpis egestas pretium aenean pharetra magna ac. Mauris sit amet massa
-                    vitae
-                    tortor. Eget lorem dolor sed viverra ipsum. Sit amet est placerat in egestas erat.
-
-                    Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Mi tempus imperdiet nulla
-                    malesuada. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Tellus mauris a diam
-                    maecenas sed
-                    enim ut. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Fermentum
-                    posuere urna
-                    nec tincidunt praesent semper feugiat. Et tortor at risus viverra adipiscing at in tellus
-                    integer.
-                    Gravida in fermentum et sollicitudin ac orci. Elit scelerisque mauris pellentesque pulvinar
-                    pellentesque
-                    habitant morbi. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. Amet purus gravida
-                    quis
-                    blandit turpis cursus in hac. Tortor at auctor urna nunc id cursus.
-
-                    Ullamcorper eget nulla facilisi etiam. Suscipit adipiscing bibendum est ultricies. Venenatis a
-                    condimentum vitae sapien pellentesque habitant morbi tristique. Libero enim sed faucibus turpis
-                    in eumi.
+                    <h2>Graphs</h2>
+                    <div id="plot1" style="margin:0%" auto;></div>
+                    <div id="plot2" style="margin:0%" auto;></div>
                 </div>
             </div>
         </div>
@@ -135,18 +114,20 @@
     </div>
 
     <!-- Imported Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.plot.ly/plotly-locale-fr-latest.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/slick/slick.js')}}" charset="utf-8"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/kanye.js')}}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/data.js')}}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/808tables.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/carousel-settings.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/plots.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/808-content.js')}}"></script>
 </body>
 
 </html>
