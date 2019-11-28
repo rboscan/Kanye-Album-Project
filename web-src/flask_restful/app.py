@@ -72,7 +72,7 @@ def process():
 
     return jsonify(hits)
 
-@app.route('/result2', methods=['GET','POST'])
+@app.route('/jsontree', methods=['GET','POST'])
 def tree():
     if request.method == 'GET':
         results = db.session.query(Discography.album, Discography.song, Discography.sentiment, Discography.rating).all()
@@ -91,6 +91,9 @@ def tree():
             else: i=i+1
     return jsonify(al_unique)
 
+@app.route('/test')
+def test():
+    return render_template('test.html')
 
 @app.route('/')
 def index():
