@@ -72,6 +72,11 @@ def process():
 
     return jsonify(hits)
 
+@app.rout('/result2', methods=['GET','POST'])
+def tree():
+    if request.method == 'GET':
+        results = db.session.query(Discography.album, Discography.song, Discography.sentiment, Discography.rating).all()
+
 
 @app.route('/')
 def index():
