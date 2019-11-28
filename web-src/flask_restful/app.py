@@ -72,10 +72,24 @@ def process():
 
     return jsonify(hits)
 
-@app.rout('/result2', methods=['GET','POST'])
+@app.route('/result2', methods=['GET','POST'])
 def tree():
     if request.method == 'GET':
         results = db.session.query(Discography.album, Discography.song, Discography.sentiment, Discography.rating).all()
+        al_unique = []
+        for result in results:
+            if {'Album':result[0],'children':[]} not in al_unique:
+                al_unique.append({'Album':result[0],'children':[]})
+        i=1
+        for result in results:
+            if al_unique[i-1]['Album'] == result[0]:
+                al_unique[i-1]['children'].append({'Song':result[1],
+                                'children':[{'Sentiment': result[2],
+                                                  'Rating': result[3]
+                                                  }]
+                                     })
+            else: i=i+1
+    return jsonify(al_unique)
 
 
 @app.route('/')
