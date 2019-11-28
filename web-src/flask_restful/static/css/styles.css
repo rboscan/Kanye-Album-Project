@@ -141,6 +141,9 @@ div.keyboard img{
 .keyboard p{
     font-size: 1.5rem;
 }
+*, ::after, ::before{
+    table-layout: fixed;
+}
 table#song-info thead tr th.table-head{
     color: rgba(228, 117, 59);
     font-size:14px;
