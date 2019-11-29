@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <title>D3 v5 Zoomable Sunburst</title>
-    <link rel='stylesheet' src="{{ url_for('static', filename='css/teststyle.css')}}">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-    <svg id="partitionSVG" width="932" height="932" viewBox="0 0 932 932"></svg>
-    <script src="{{ url_for('static', filename='js/sunburst.js')}}"></script>
+    <div id="myDiv"></div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/sunburst.js')}}"></script>
 </body>
+
 </html>
