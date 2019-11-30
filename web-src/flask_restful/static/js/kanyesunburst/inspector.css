@@ -18,6 +18,11 @@
     filter: blur(5px);
 }
 
+a button.btn.btn-secondary{
+    font-size:40px;
+    margin-left:50px;
+    margin-top:50px;
+}
 .content {
     left: 0;
     right: 0;

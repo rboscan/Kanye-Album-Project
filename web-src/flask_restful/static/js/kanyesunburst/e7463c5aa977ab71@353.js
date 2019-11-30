@@ -9,7 +9,7 @@ export default function define(runtime, observer) {
   root.each(d => d.current = d);
 
   const svg = d3.create("svg")
-      .attr("viewBox", [0, 0, width, width])
+      .attr("viewBox", [-600, 0, 2000, 2000])
       .style("font", "10px sans-serif");
 
   const g = svg.append("g")

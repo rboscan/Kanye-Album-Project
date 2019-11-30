@@ -3,7 +3,6 @@
 
 <head>
     <!-- Necessary style sheets -->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='js/kanyesunburst/./inspector.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js/slick/slick.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js/slick/slick-theme.css')}}">
     <link rel="stylsheet" href="{{ url_for('static', filename='css/reset.css')}}">
@@ -23,6 +22,8 @@
                 <img class="header" src="{{ url_for('static', filename='css/images/picture3.png')}}">
                 <br></br>
                 <img class="subheader" src="{{ url_for('static', filename='css/images/subheader.png')}}">
+                <br><br>
+                <a href="{{ url_for('test') }}"><button class="btn btn-secondary">Sunburst Chart</button></a>
             </center>
         </div>
         <!-- Slick Carousel -->
