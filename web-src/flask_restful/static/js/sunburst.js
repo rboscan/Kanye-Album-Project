@@ -1,7 +1,3 @@
-d3.json('/jsontree', function(data){
-    console.log(data)
-});
-
 const format = d3.format(",d");
 const width = 932;
 const radius = width / 6;
