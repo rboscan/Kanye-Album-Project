@@ -1,0 +1,14 @@
+{
+  "name": "@rboscan/zoomable-sunburst",
+  "main": "e7463c5aa977ab71@353.js",
+  "version": "353.0.0",
+  "homepage": "https://observablehq.com/@rboscan/zoomable-sunburst",
+  "author": {
+    "name": "rboscan",
+    "url": "https://observablehq.com/@rboscan"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
