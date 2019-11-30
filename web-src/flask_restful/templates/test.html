@@ -2,5 +2,11 @@
 <meta charset="utf-8">
 <title>Zoomable Sunburst</title>
 <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='js/kanyesunburst/./inspector.css')}}">
+<link rel="stylsheet" href="{{ url_for('static', filename='css/reset.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
 <body>
-<script type="module" src="{{url_for('static',filename='js/kanyesunburst/module.js')}}"></script>
+    <div class="content">
+    <script type="module" viewBox="250 250" src="{{url_for('static',filename='js/kanyesunburst/module.js')}}"></script>
+    </div>
+</body>

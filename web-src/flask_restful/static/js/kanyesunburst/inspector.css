@@ -1,3 +1,31 @@
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('images/kanye.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.content {
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin:0;
+    padding:0;
+}
+
 :root {
     --syntax_normal: #1b1e23;
     --syntax_comment: #a9b0bc;
@@ -64,6 +92,10 @@
 .observablehq--regexp,
 .observablehq--symbol {
     color: var(--syntax_number)
+}
+
+span.observablehq--inspect{
+    display:none
 }
 
 .observablehq--index,
