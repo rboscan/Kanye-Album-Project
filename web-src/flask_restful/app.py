@@ -76,16 +76,16 @@ def process():
 def tree():
     if request.method == 'GET':
         results = db.session.query(Discography.album, Discography.song, Discography.sentiment, Discography.rating).all()
-        al_unique = {'name':'Discography', 'children':[]}
-        for result in results:
-            if {'name':result[0],'children':[]} not in al_unique['children']:
-                al_unique['children'].append({'name':result[0],'children':[]})
-        i=1
-        for result in results:
-            if al_unique['children'][i-1]['name'] == result[0]:
-                al_unique['children'][i-1]['children'].append({'name':result[1],'size':3000})
+    al_unique = {'name':'Discography', 'children':[]}
+    for result in results:
+        if {'name':result[0],'children':[]} not in al_unique['children']:
+            al_unique['children'].append({'name':result[0],'children':[]})
+    i=1
+    for result in results:
+        if al_unique['children'][i-1]['name'] == result[0]:
+            al_unique['children'][i-1]['children'].append({'name':result[1],'size':3000})
 
-            else: i=i+1
+        else: i=i+1
     return jsonify(al_unique)
 
 @app.route('/test')
