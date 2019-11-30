@@ -4,7 +4,7 @@
         "name": "College Dropout",
         "children": [{
             "name": "Intro",
-            "size": 3000
+            "value": 3000
         }]
     }]
 }
