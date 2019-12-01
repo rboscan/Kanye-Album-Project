@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Zoomable Sunburst</title>
-<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='js/kanyesunburst/./inspector.css')}}">
 <link rel="stylsheet" href="{{ url_for('static', filename='css/reset.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <body>
     <a href="{{ url_for('index') }}"><button class="btn btn-secondary">Home</button></a>
     <div class="content">
-    <script type="module" viewBox="250 250" src="{{url_for('static',filename='js/kanyesunburst/module.js')}}"></script>
+    <script src="{{url_for('static',filename='js/sunburst.js')}}"></script>
     </div>
 </body>
