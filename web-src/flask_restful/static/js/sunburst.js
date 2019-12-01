@@ -71,7 +71,7 @@ function mouseMoveArc (d) {
 }
 
 var root_ = null;
-d3.json("/jsontree", function(error, root) {
+d3.json("https://raw.githubusercontent.com/rboscan/Kanye-Album-Project/master/web-src/flask_restful/test.json", function(error, root) {
   if (error) return console.warn(error);
   // Compute the initial layout on the entire tree to sum sizes.
   // Also compute the full name and fill color for each node,
