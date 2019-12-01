@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Zoomable Sunburst</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='js/kanyesunburst/./inspector.css')}}">
     <link rel="stylsheet" href="{{ url_for('static', filename='css/reset.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -12,8 +11,7 @@
 
 <body>
     <a href="{{ url_for('index') }}"><button class="btn btn-secondary">Home</button></a>
-    <div class="content">
-        <script type="module" src="{{url_for('static',filename='js/kanyesunburst/module.js')}}">
-        </script>
-    </div>
+    <div class="content"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/barchart.js')}}"></script>
 </body>
