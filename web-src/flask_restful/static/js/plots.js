@@ -46,24 +46,20 @@ d3.json('/result', function (jsondata) {
             }];
 
             var layout = {
-                legend: {
-                    font: {
-                        color: 'rgb(228, 117, 59)'
-                    }
+
+                font: {
+                    color: 'rgb(228, 117, 59)'
                 },
                 title: {
                     text: 'Datum Distribution',
-                    font: {
-                        color: 'rgb(228, 117, 59)'
-                    }
                 },
-                yaxis: {
-                    textfont: {
-                        color: '#ff7f0e'
-                    }
+                xaxis: {
+                    tickangle: 45,
+                    automargin: true
                 },
                 paper_bgcolor: 'rgba(0,0,0,0)',
-                plot_bgcolor: 'rgba(0,0,0,0)'
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                margin: {}
             };
             Plotly.newPlot('plot1', data, layout, {
                 responsive: true
@@ -156,19 +152,20 @@ $('div').on("afterChange", function () {
                 }];
 
                 var layout = {
-                    legend: {
-                        font: {
-                            color: 'rgb(228, 117, 59)'
-                        }
+
+                    font: {
+                        color: 'rgb(228, 117, 59)'
                     },
                     title: {
                         text: 'Datum Distribution',
-                        font: {
-                            color: 'rgb(228, 117, 59)'
-                        }
+                    },
+                    xaxis: {
+                        tickangle: 45,
+                        automargin: true
                     },
                     paper_bgcolor: 'rgba(0,0,0,0)',
-                    plot_bgcolor: 'rgba(0,0,0,0)'
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    margin: {}
                 };
                 Plotly.newPlot('plot1', data, layout, {
                     responsive: true
